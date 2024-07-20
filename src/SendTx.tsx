@@ -21,7 +21,7 @@ export const SendTx = () => {
       content = "Tx in progress";
       break;
     case !!wallet:
-      content = "Send transaction";
+      content = "Pay the transfer fee";
       break;
   }
 
