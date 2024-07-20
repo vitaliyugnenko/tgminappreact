@@ -11,7 +11,8 @@ export const SendTx = () => {
   const [tonConnectUI] = useTonConnectUI();
   const [txInProgress, setTxInProgress] = useState(false);
 
-  let content: string;
+  // Инициализация content значением по умолчанию
+  let content: string = "Conect Wallet";
   switch (true) {
     case !isConnectionRestored:
       content = "Loading...";
@@ -22,8 +23,6 @@ export const SendTx = () => {
     case !!wallet:
       content = "Send transaction";
       break;
-    case !wallet:
-      content = "Conect Wallet";
   }
 
   const handleClick = async () => {
