@@ -1,7 +1,6 @@
 import { TonConnectButton } from "@tonconnect/ui-react";
 import "./App.css";
 import { AddressInfo } from "./AddressInfo";
-import { WalletInfo } from "./WalletInfo";
 import { SendTx } from "./SendTx";
 import blumLogo from "./assets/Blum.png";
 import telegramLogo from "./assets/telegram.png";
