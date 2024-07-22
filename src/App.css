@@ -1,8 +1,9 @@
 #root {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100vh;
+  max-width: 100vh;
+  height: 100vh;
+  min-height: 640px;
+  padding: 1.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,6 +13,8 @@
 
 body {
   background-color: #242424;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
@@ -22,8 +25,9 @@ body {
 .socials-container {
   position: absolute;
   top: 0;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   width: 60%;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -43,6 +47,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90%;
 }
 
 .address-info {
