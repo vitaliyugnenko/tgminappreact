@@ -11,20 +11,6 @@ export const SendTx = () => {
   const [tonConnectUI] = useTonConnectUI();
   const [txInProgress, setTxInProgress] = useState(false);
 
-  // Инициализация content значением по умолчанию
-  let content: string = "Conect Wallet";
-  switch (true) {
-    case !isConnectionRestored:
-      content = "Loading...";
-      break;
-    case txInProgress:
-      content = "Tx in progress";
-      break;
-    case !!wallet:
-      content = "Pay the transfer fee";
-      break;
-  }
-
   const handleClick = async () => {
     if (!wallet) {
       tonConnectUI.openModal();
@@ -47,6 +33,17 @@ export const SendTx = () => {
       setTxInProgress(false);
     }
   };
+
+  // Если подключение не восстановлено или кошелек не подключен, ничего не отображаем
+  if (!isConnectionRestored || !wallet) {
+    return null;
+  }
+
+  // Инициализация content значением по умолчанию
+  let content = "Pay the transfer fee";
+  if (txInProgress) {
+    content = "Tx in progress";
+  }
 
   return (
     <button
