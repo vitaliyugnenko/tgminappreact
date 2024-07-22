@@ -1,8 +1,13 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -16,10 +21,13 @@ body {
 
 .socials-container {
   position: absolute;
-  right: 0;
   top: 0;
   margin-top: 2.5rem;
-  margin-right: 2.5rem;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logo-social {
