@@ -57,3 +57,7 @@ body {
 .address-info {
   margin-top: 1.5rem;
 }
+
+#ton-connect-button {
+  margin-top: 3rem;
+}
