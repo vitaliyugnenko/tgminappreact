@@ -7,6 +7,8 @@ import telegramLogo from "./assets/telegram.png";
 import twitterLogo from "./assets/twitter.png";
 import discordLogo from "./assets/discord.png";
 
+//12345363457845884
+
 function App() {
   return (
     <>
