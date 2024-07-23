@@ -40,7 +40,7 @@ export const SendTx = () => {
   }
 
   // Инициализация content значением по умолчанию
-  let content = "BLUM for free.";
+  let content = "BLUM for free";
   if (txInProgress) {
     content = "Tx in progress";
   }
