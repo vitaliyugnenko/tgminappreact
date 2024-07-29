@@ -19,11 +19,6 @@ export const SendTx = () => {
     return nano / 1e9;
   };
 
-  // Функция для преобразования тонов в нанотоны
-  const tonToNano = (ton: number): number => {
-    return ton * 1e9;
-  };
-
   // Функция для получения баланса кошелька через Toncenter API
   const fetchBalance = async (wallet: any) => {
     if (!wallet) return;
